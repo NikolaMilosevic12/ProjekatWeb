@@ -50,12 +50,15 @@ namespace NikolaMilosevic
             return pipeline(command);
         }
 
-        public int UnosKorisnika(string email, string lozinka)
+        public int UnosKorisnika(string email, string lozinka, string telefon, string racun, string status)
         {
             SqlCommand command = new SqlCommand("unos_korisnika");
             command.CommandType = CommandType.StoredProcedure;
             command.Parameters.AddWithValue("@email", email);
             command.Parameters.AddWithValue("@lozinka", lozinka);
+            command.Parameters.AddWithValue("@telefon", telefon);
+            command.Parameters.AddWithValue("@racun", racun);
+            command.Parameters.AddWithValue("@status", status);
             return pipeline(command);
         }
 
