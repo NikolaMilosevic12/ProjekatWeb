@@ -1,0 +1,22 @@
+#oglas_page_wrap {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    gap: 30px;
+    justify-content: center;
+}
+
+#desna_strana {
+    width: 250px;
+    border: 1px solid #ccc;
+    padding: 15px;
+    background: #f9f9f9;
+    height: 120px;
+}
+
+#slajder {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}

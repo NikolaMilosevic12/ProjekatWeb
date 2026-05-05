@@ -1,0 +1,14 @@
+﻿body {
+}
+
+.field {
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttons {
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-around;
+}

@@ -1,0 +1,37 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.Master.cs" Inherits="NikolaMilosevicKonzoleProdajem.Site" %>
+
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <title>konzoleprodajem</title>
+    <link href="css/master.css" rel="stylesheet" />
+    <link href="css/main.css" rel="stylesheet" />
+    <link href="css/oglas_page.css" rel="stylesheet" />
+    <link href="css/loginregister.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="logo_short.ico" />
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server" />
+</head>
+<body>
+    <form runat="server">
+        <div id="header">
+            <asp:HyperLink ID="logoLink" runat="server" NavigateUrl="~/main.aspx">
+                <asp:Image ID="logo" runat="server" Height="64px" ImageUrl="~/logo.png" Width="154px" />
+            </asp:HyperLink>
+            <div>
+                <asp:TextBox ID="searchBar" runat="server" Width="389px" Height="15px"></asp:TextBox>
+                <asp:Button ID="searchButton" runat="server" Height="20px" Text="Pretrazi" Width="81px" OnClick="searchButton_Click" />
+            </div>
+            <div>
+                <asp:HyperLink ID="profileLink" runat="server" Visible="false" NavigateUrl="#">Profil</asp:HyperLink>
+                <asp:HyperLink ID="loginLink" runat="server" NavigateUrl="~/login.aspx">Login</asp:HyperLink>
+            </div>
+        </div>
+
+        <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+
+        <div id="footer">
+            konzoleprodajem 2026
+        </div>
+    </form>
+</body>
+</html>
