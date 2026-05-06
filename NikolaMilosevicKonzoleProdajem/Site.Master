@@ -4,12 +4,12 @@
 <html>
 <head runat="server">
     <title>konzoleprodajem</title>
-    <link href="css/master.css" rel="stylesheet" />
-    <link href="css/main.css" rel="stylesheet" />
-    <link href="css/oglas_page.css" rel="stylesheet" />
-    <link href="css/loginregister.css" rel="stylesheet" />
-    <link rel="icon" type="image/x-icon" href="logo_short.ico" />
-    <asp:ContentPlaceHolder ID="HeadContent" runat="server" />
+    <link href="css/master.css" rel="stylesheet"/>
+    <link href="css/main.css" rel="stylesheet"/>
+    <link href="css/oglas_page.css" rel="stylesheet"/>
+    <link href="css/loginregister.css" rel="stylesheet"/>
+    <link rel="icon" type="image/x-icon" href="logo_short.ico"/>
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server"/>
 </head>
 <body>
     <form runat="server">
